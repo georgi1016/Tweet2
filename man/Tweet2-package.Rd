@@ -4,7 +4,7 @@
 \docType{package}
 \title{
 What the package does (short line)
-~~ package title ~~
+tweet
 }
 \description{
 More about what it does (maybe more than one line)
