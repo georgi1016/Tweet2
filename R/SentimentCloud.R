@@ -1,4 +1,4 @@
-SentimentCloud <- function(keyword,n)
+SentimentCloud <- function()
 {
 
 chooseCRANmirror(ind=74)
@@ -62,13 +62,8 @@ getSentiment <- function (text, key){
 
 
 
-tweets = searchTwitter(keyword,n)
-# get text 
-tweet_txt = sapply(tweets, function(x) x$getText())
-# clean text
-tweet_clean = clean.text(tweet_txt)
-tweet_num = length(tweet_clean)
-tweet_df = data.frame(text=tweet_clean, sentiment=rep("", tweet_num),stringsAsFactors=FALSE)
+tweet_df = read.csv("tweet.csv", row.names = 1)
+tweet_num = nrow(tweet_df)
 db_key="34948b7e13af842df4a94324273d3b53"
 
 
