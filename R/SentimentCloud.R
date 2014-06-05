@@ -2,7 +2,7 @@ SentimentCloud <- function()
 {
 
 chooseCRANmirror(ind=74)
-install.packages("twitteR","RCurl","RJSONIO","stringr","tm","wordcloud")
+
 library("twitteR")
 library(RCurl)
 library(RJSONIO)
